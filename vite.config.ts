@@ -10,7 +10,7 @@ export default defineConfig(({ command }): UserConfig => {
         outDir: "lib",
         lib: {
           entry: "src/index.ts",
-          name: "React-Bubblytip",
+          name: "React-BubblyTip",
           formats: ["cjs"],
           fileName: "index",
         },
