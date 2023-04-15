@@ -26,6 +26,10 @@
       "prettier --write"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steven-yn/React-BubblyTip.git"
+  },
   "devDependencies": {
     "@cypress/react": "^7.0.3",
     "@cypress/vite-dev-server": "^5.0.5",
