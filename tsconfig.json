@@ -19,8 +19,10 @@
     "incremental": true,
     "useUnknownInCatchVariables": false,
     "jsx": "react-jsx",
-    "baseUrl": ".",
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "declaration": true,
+    "composite": true,
+    "outDir": "lib"
   },
   "include": ["src", "**/*.ts", "**/*.tsx", "**/*"],
   "exclude": [
@@ -28,7 +30,9 @@
     "**/*.spec.ts",
     "**/*.test.ts",
     "**/*.spec.tsx",
-    "**/*.test.tsx"
+    "**/*.test.tsx",
+    "**/*.config.ts",
+    "**/*.build.js"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

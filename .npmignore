@@ -1,0 +1,12 @@
+node_modules
+.husky
+src/
+.eslintrc.json
+.gitignore
+.swcrc
+cypress.config.ts
+jest.config.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+dist

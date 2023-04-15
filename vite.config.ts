@@ -7,12 +7,14 @@ export default defineConfig(({ command }): UserConfig => {
     return {
       plugins: [react()],
       build: {
-        outDir: "dist",
+        outDir: "lib",
         lib: {
-          entry: "src/index.js",
-          name: "React-Tooltip-Bubble",
-          formats: ["es", "cjs", "umd"],
+          entry: "src/index.ts",
+          name: "React-Bubblytip",
+          formats: ["cjs"],
+          fileName: "index",
         },
+        minify: false,
         rollupOptions: {
           external: ["react", "react-dom"],
           output: {

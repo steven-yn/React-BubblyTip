@@ -1,5 +1,4 @@
-# React-Tooltip-Bubble
+# React-Bubblytip
 
 You can easily display a tooltip bubble UI on components in your React project.
-
-Next.js
+Also use the same for Next.js projects as well as React.
