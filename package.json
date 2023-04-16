@@ -8,6 +8,7 @@
   "scripts": {
     "build": "rm -rf lib && tsc",
     "prepublishOnly": "rm -rf lib && tsc",
+    "lint-staged": "lint-staged",
     "test:unit": "jest",
     "test-e2e": "cypress open"
   },
