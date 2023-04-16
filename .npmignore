@@ -10,3 +10,7 @@ tsconfig.json
 tsconfig.node.json
 vite.config.ts
 dist
+index.tsx
+app.tsx
+jest.config.js
+jest.setup.ts

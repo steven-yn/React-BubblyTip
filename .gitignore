@@ -2,3 +2,6 @@ unused
 node_modules
 dist
 lib
+temp.tsx
+index.tsx
+app.tsx

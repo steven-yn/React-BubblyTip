@@ -19,20 +19,30 @@
     "incremental": true,
     "useUnknownInCatchVariables": false,
     "jsx": "react-jsx",
-    "types": ["vite/client"],
+    "types": ["vite/client", "jest", "@testing-library/jest-dom"],
     "declaration": true,
     "composite": true,
     "outDir": "lib"
   },
-  "include": ["src", "**/*.ts", "**/*.tsx", "**/*"],
+  "include": [
+    "src",
+    "**/*",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/app.tsx",
+    "src/index.tsx"
+  ],
   "exclude": [
     "node_modules",
+    "lib",
+    "src/__tests__",
     "**/*.spec.ts",
-    "**/*.test.ts",
     "**/*.spec.tsx",
-    "**/*.test.tsx",
     "**/*.config.ts",
-    "**/*.build.js"
+    "**/*.build.js",
+    "jest.config.js",
+    "jest.setup.ts",
+    "src/temp.tsx"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { MsgBoxProps, StartPointProps } from "./BubblyTip";
 
 export const BubblyTipStartPointDiv = styled.div<StartPointProps>`
-  position: relative;
-  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -12,6 +14,24 @@ export const BubblyTipStartPointDiv = styled.div<StartPointProps>`
   height: 0;
 
   margin-left: ${(props) => props.marginLeft}px;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 `;
 
 export const BubblyTipBoxDiv = styled.div<MsgBoxProps>`
