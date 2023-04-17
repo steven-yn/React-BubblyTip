@@ -5,7 +5,7 @@
     "url": "https://github.com/steven-yn/React-BubblyTip.git"
   },
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "You can easily display a tooltip bubble UI on components in your React project.",
   "main": "lib/src/index.js",
   "module": "lib/src/index.js",
