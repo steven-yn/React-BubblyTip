@@ -4,6 +4,8 @@ unused
 node_modules
 lib
 
+.npmrc
+
 # local application
 
 temp.tsx
