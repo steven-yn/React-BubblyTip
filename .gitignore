@@ -1,7 +1,11 @@
+# folders
+
 unused
 node_modules
-dist
 lib
+
+# local application
+
 temp.tsx
 index.tsx
 app.tsx

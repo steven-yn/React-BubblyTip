@@ -1,6 +1,6 @@
 {
   "name": "react-bubblytip",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "You can easily display a tooltip bubble UI on components in your React project.",
   "main": "lib/src/index.js",
   "module": "lib/src/index.js",
@@ -17,8 +17,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "eslint --fix && prettier --write",
-      "pre-push": "eslint --fix && pretter --write"
+      "pre-commit": "eslint --fix && prettier --write"
     }
   },
   "lint-staged": {

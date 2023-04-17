@@ -32,5 +32,5 @@ This is still experimental, and we'll soon remove the dependency on Styled-Compo
 
 # Confirmed Support Coverage
 
-- react : 16.0.0 ~ Latest Version
+- react : 17.0.0 ~ Latest Version
 - next : 12.0.0 ~ Latest Version
