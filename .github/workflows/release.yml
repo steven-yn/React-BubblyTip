@@ -1,8 +1,9 @@
 name: on release
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
+  push:
+    branches: [release]
 
 jobs:
   publish-github-registry:
