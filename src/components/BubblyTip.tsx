@@ -79,7 +79,11 @@ const MsgBox = (props: PropsWithChildren<MsgBoxProps>) => {
   delete styledProps.children;
 
   return (
-    <BubblyTipBoxDiv className="BubblyTip__Message__Box" {...styledProps}>
+    <BubblyTipBoxDiv
+      className="BubblyTip__Message__Box"
+      data-testid="BubblyTip__Message__Box"
+      {...styledProps}
+    >
       <div className="BubblyTip__EndPoint__Arrow" />
       <div className="BubblyTip__Content__Box">{children}</div>
     </BubblyTipBoxDiv>

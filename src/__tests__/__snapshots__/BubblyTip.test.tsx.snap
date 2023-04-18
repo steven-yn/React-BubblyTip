@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BubblyTip matches snapshot 1`] = `
+<div
+  className="Container"
+>
+  <button
+    onClick={[Function]}
+  >
+    push bubbly
+  </button>
+</div>
+`;
