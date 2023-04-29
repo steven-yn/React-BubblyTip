@@ -11,7 +11,7 @@ export default defineConfig(({ command }): UserConfig => {
         lib: {
           entry: "src/index.ts",
           name: "React-BubblyTip",
-          formats: ["cjs"],
+          formats: ["cjs", "es"],
           fileName: "index",
         },
         minify: false,
@@ -26,10 +26,9 @@ export default defineConfig(({ command }): UserConfig => {
         },
       },
     };
-  } else {
-    // 개발 환경 설정 등이 필요한 경우 추가
-    return {
-      plugins: [react()],
-    };
   }
+  // 개발 환경 설정 등이 필요한 경우 추가
+  return {
+    plugins: [react()],
+  };
 });

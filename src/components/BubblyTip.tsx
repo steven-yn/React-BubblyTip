@@ -1,6 +1,13 @@
 import React, { PropsWithChildren } from "react";
 import useClientReady from "../hooks/useClientReady";
-import { BubblyTipBoxDiv, BubblyTipStartPointDiv } from "./BubblyTip.style";
+import "../style/index.css";
+import { CSSProperties } from "styled-components";
+import {
+  getArrowPropsStyle,
+  getBoxPropsStyle,
+  getContentPropsStyle,
+  getStartPropsStyle,
+} from "./BubblyTip.style";
 
 interface BubblyTipProps {
   push: boolean;
@@ -54,10 +61,12 @@ const StartPoint = ({
   children,
   marginLeft,
 }: PropsWithChildren<StartPointProps>) => {
+  const PropsStyle = getStartPropsStyle({ marginLeft });
+
   return (
-    <BubblyTipStartPointDiv className="BubblyTip" marginLeft={marginLeft}>
+    <div className="BubblyTip" style={PropsStyle}>
       {children}
-    </BubblyTipStartPointDiv>
+    </div>
   );
 };
 
@@ -73,20 +82,36 @@ export interface MsgBoxProps {
 
 const MsgBox = (props: PropsWithChildren<MsgBoxProps>) => {
   const { children } = props;
-  const styledProps = {
-    ...props,
-  };
-  delete styledProps.children;
+
+  // TODO: 레이아웃 변경에 따른 left 등을 계산할수 있게 해야함
+  const BoxPropsStyle = getBoxPropsStyle({
+    maxHeight: props.height,
+  });
+
+  // TODO: 화살표의 방향을 바꿀수 있게 해야함
+  const ArrowPropsStyle = getArrowPropsStyle({
+    borderRightColor: props.bgColor,
+  });
+
+  // TODO: 레이아웃 변경에 따른 left 등을 계산할수 있게 해야함
+  // TODO : 최소크기값 수정되야할수도 있음
+  const ContentPropsStyle = getContentPropsStyle({
+    height: props.height,
+    backgroundColor: props.bgColor,
+    color: props.color,
+  });
 
   return (
-    <BubblyTipBoxDiv
+    <div
       className="BubblyTip__Message__Box"
       data-testid="BubblyTip__Message__Box"
-      {...styledProps}
+      style={BoxPropsStyle}
     >
-      <div className="BubblyTip__EndPoint__Arrow" />
-      <div className="BubblyTip__Content__Box">{children}</div>
-    </BubblyTipBoxDiv>
+      <div className="BubblyTip__EndPoint__Arrow" style={ArrowPropsStyle} />
+      <div className="BubblyTip__Content__Box" style={ContentPropsStyle}>
+        {children}
+      </div>
+    </div>
   );
 };
 
@@ -96,7 +121,7 @@ MsgBox.defaultProps = {
   color: "#fff",
 };
 
-BubblyTip.StartPoint = React.memo(StartPoint);
-BubblyTip.MsgBox = React.memo(MsgBox);
+BubblyTip.StartPoint = StartPoint;
+BubblyTip.MsgBox = MsgBox;
 
 export default BubblyTip;

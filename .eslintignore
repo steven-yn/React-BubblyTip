@@ -1,3 +1,4 @@
 temp.tsx
 __tests__
 jest.config.js
+vite.config.ts

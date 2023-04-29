@@ -14,7 +14,7 @@ export const mountAnimateSelector = ({ animateValue }: MountProps) => {
     switch (animateValue) {
       case "fade_in_out": {
         $BubblyTip.style.opacity = "0";
-        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s fadeIn`;
+        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s bubblytip-fadeIn`;
         $BubblyTip.style.opacity = "1";
 
         break;
@@ -22,7 +22,7 @@ export const mountAnimateSelector = ({ animateValue }: MountProps) => {
 
       default: {
         $BubblyTip.style.opacity = "0";
-        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s fadeIn`;
+        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s bubblytip-fadeIn`;
         $BubblyTip.style.opacity = "1";
 
         break;
@@ -47,7 +47,7 @@ export const unmountAnimateSelector = ({
   if ($BubblyTip) {
     switch (animateValue) {
       case "fade_in_out": {
-        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s fadeOut`;
+        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s bubblytip-fadeOut`;
         isWorkDone.current = false;
 
         setTimeout(() => {
@@ -60,7 +60,7 @@ export const unmountAnimateSelector = ({
       }
 
       default: {
-        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s fadeOut`;
+        $BubblyTip.style.animation = `${fadeTime}ms ease-in 0s bubblytip-fadeOut`;
         isWorkDone.current = false;
 
         setTimeout(() => {

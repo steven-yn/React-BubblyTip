@@ -1,0 +1,72 @@
+.BubblyTip {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+
+  width: 0;
+  height: 0;
+}
+
+.BubblyTip__Message__Box {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.BubblyTip__EndPoint__Arrow {
+  position: relative;
+  left: -1.625rem;
+  z-index: -1;
+
+  width: 0;
+  height: 0;
+
+  border-top: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 26px solid transparent;
+  border-left: 26px solid transparent;
+}
+
+.BubblyTip__Content__Box {
+  position: relative;
+  left: calc((-1.625rem * 2) + 0.5rem);
+
+  padding: 0.25rem 0.625rem;
+
+  width: 17.5rem;
+
+  min-width: 6.25rem;
+  min-height: 1.25rem;
+
+  border-radius: 6px;
+
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+@keyframes bubblytip-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bubblytip-fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
