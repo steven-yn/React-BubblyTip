@@ -1,7 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import useClientReady from "../hooks/useClientReady";
 import "../style/index.css";
-import { CSSProperties } from "styled-components";
 import {
   getArrowPropsStyle,
   getBoxPropsStyle,
