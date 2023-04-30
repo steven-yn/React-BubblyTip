@@ -3,3 +3,4 @@ __tests__
 jest.config.js
 vite.config.ts
 postcss.config.js
+testApp
