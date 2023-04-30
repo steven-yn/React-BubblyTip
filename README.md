@@ -16,11 +16,16 @@ const Temp = () => {
   };
 
   return (
-    <div className="Container" style={{ position: "relative" }}>
-      <button onClick={onClick} style={{ width: "100%" }}>
-        push bubbly
-      </button>
-      <BubblyTip push={isView}>Here is!</BubblyTip>
+    <div className="Wrap" style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        className="Container"
+        style={{ position: "relative", width: "200px" }}
+      >
+        <button onClick={onClick} style={{ width: "200px" }}>
+          push bubbly
+        </button>
+        <BubblyTip push={isView}>Here is!</BubblyTip>
+      </div>
     </div>
   );
 };
