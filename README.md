@@ -6,6 +6,8 @@ Also use the same for Next.js projects as well as React.
 # Usage
 
 ```typescript
+import "react-bubblytip/lib/bubblytip.css";
+
 const Temp = () => {
   const [isView, msgPush] = useBubblyTip();
 

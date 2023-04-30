@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from "react";
 import useClientReady from "../hooks/useClientReady";
-import "../style/index.css";
 import {
   getArrowPropsStyle,
   getBoxPropsStyle,

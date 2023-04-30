@@ -4,6 +4,7 @@ import viteLogo from "./vite.svg";
 import "./App.css";
 import useBubblyTip from "../hooks/useBubblyTip";
 import BubblyTip from "../components/BubblyTip";
+import "./../style/bubblytip.css";
 // import buildedBubblyTip from "../../lib/src";
 // import buildeduseBubblyTip from "../../lib/src";
 
