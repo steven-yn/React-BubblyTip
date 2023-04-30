@@ -4,6 +4,8 @@ import viteLogo from "./vite.svg";
 import "./App.css";
 import useBubblyTip from "../hooks/useBubblyTip";
 import BubblyTip from "../components/BubblyTip";
+// import buildedBubblyTip from "../../lib/src";
+// import buildeduseBubblyTip from "../../lib/src";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +29,7 @@ function App() {
       </div>
       <p className="read-the-docs">Click on the Bubblytip</p>
       <Temp />
+      {/* <BuildTemp /> */}
     </div>
   );
 }
@@ -52,5 +55,27 @@ const Temp = () => {
     </div>
   );
 };
+
+// const BuildTemp = () => {
+//   const [isView, msgPush] = buildeduseBubblyTip();
+
+//   const onClick = () => {
+//     msgPush((push) => !push);
+//   };
+
+//   return (
+//     <div className="Wrap" style={{ display: "flex", justifyContent: "center" }}>
+//       <div
+//         className="Container"
+//         style={{ position: "relative", width: "200px" }}
+//       >
+//         <button onClick={onClick} style={{ width: "200px" }}>
+//           push bubbly
+//         </button>
+//         <buildedBubblyTip push={isView}>Here is!</buildedBubblyTip>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default App;
