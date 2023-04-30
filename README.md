@@ -33,4 +33,3 @@ I hope to support more custom styling in the future.
 
 - react : 17.0.0 ~ Latest Version
 - next : 12.0.0 ~ Latest Version
-- styled-components :

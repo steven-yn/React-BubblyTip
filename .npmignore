@@ -5,6 +5,7 @@ src
 testApp
 .husky
 .github
+.eslintignore
 
 # configs
 
