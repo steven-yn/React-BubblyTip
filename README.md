@@ -26,9 +26,8 @@ const Temp = () => {
 
 # Comments
 
-The current stylesheet is Styled-Components. \
-This is because we've imported the code that we've been working with so that we can just publish it without any problems. \
-This is still experimental, and we'll soon remove the dependency on Styled-Components and make it easier to manipulate the desired UI by passing in props.
+Now available React-Bubblytip without styled-components !
+I hope to support more custom styling in the future.
 
 # Confirmed Support Coverage
 

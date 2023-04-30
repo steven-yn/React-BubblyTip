@@ -34,9 +34,11 @@
   "exclude": [
     "node_modules",
     "lib",
+    "src/testApp",
     "src/__tests__",
     "**/*.spec.ts",
     "**/*.spec.tsx",
+    "**/*.config.js",
     "**/*.config.ts",
     "**/*.build.js",
     "jest.config.js",

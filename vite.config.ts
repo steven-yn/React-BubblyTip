@@ -24,6 +24,7 @@ export default defineConfig(({ command }): UserConfig => {
             },
           },
         },
+        cssCodeSplit: false, // 모든 CSS를 번들에 포함시킵니다.
       },
     };
   }

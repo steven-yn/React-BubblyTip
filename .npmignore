@@ -18,6 +18,8 @@ vite.config.ts
 jest.config.js
 jest.setup.ts
 cypress.config.ts
+**/*.config.js
+postcss.config.js
 
 # local application
 
